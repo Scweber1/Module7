@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi's Italian Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="Luigi-logo-1.png" alt="Luigi's Italian Restaurant Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Authentic Italian Cuisine</h1>
+        <p>Experience the taste of Italy in every bite.</p>
+    </section>
+    
+    <section class="gallery">
+        <div class="image-item">
+            <a href="Pasta.jpg">
+                <img src="Pasta.jpg" alt="Delicious Food" class="styled-image">
+                <p class="image-title">Food</p>
+            </a>
+        </div>
+        <div class="image-item">
+            <a href="Wine.jpg">
+                <img src="Wine.jpg" alt="Refreshing Beverages" class="styled-image round">
+                <p class="image-title">Beverages</p>
+            </a>
+        </div>
+        <div class="image-item">
+            <a href="Restaurant.jpg">
+                <img src="Restaurant.jpg" alt="Cozy Restaurant Interior" class="styled-image shadow">
+                <p class="image-title">About Us</p>
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Luigi's Italian Restaurant | Follow us on 
+            <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i>
+        </p>
+    </footer>
+    
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+
+
+</body>
+</html>
